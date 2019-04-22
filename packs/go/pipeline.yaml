@@ -11,6 +11,8 @@ pipelines:
       steps:
       - sh: make linux
         name: make-linux
+      - sh: make unittest
+        name: unit-test
   release:
     setup:
       steps:
